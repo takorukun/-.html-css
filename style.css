@@ -4,6 +4,10 @@
     position: relative;
 }
 
+body {
+    margin: 0;
+}
+
 .Achivement {
     display: flex;
     position: absolute;
@@ -94,6 +98,7 @@ a {
     font-family: sans-serif;
     color: #333;
     margin: 0 60px 0 0;
+    z-index: 2;
 }
 
 .ContentSize0 {
@@ -104,6 +109,7 @@ a {
     right: 4px;
     bottom: 19px;
     position: relative;
+    z-index: 2;
     
 }
 
@@ -168,8 +174,8 @@ a {
     top: 337px;
     background-color: darkorange;
     width: 1442px;
-    right: 10px;
-    padding-bottom: 100px;
+    right: 8px;
+    padding-bottom: 200px;
     z-index: 100;
     position: relative;
 
@@ -193,6 +199,7 @@ a {
 .FontCustum {
     color: #fff;
     position: relative;
+    bottom: 100px;
     font-size: 16px;
     z-index: 106;
 }
@@ -252,24 +259,74 @@ a {
     }
 }
 
-@media screen and (max-width: 1439px) {
-    .AboutWrapper {
-        padding: 100px 100px 200px 0;
+@media screen and (max-width: 1080px) {
+    .HeaderNavHumburger {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        z-index: 10;
+        transform: translate(0,-50%);
+        left: 1000px;
+    }
+} 
+
+@media screen and (max-width: 1080px) {
+    .HeaderNavHumbuger_Line:first-child {
+        top: 30px;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .HeaderNavHumbuger_Line {
+        cursor: pointer;
+        display: inline-block;
+        position: absolute;
+        width: 29px;
+        height: 3px;
+        background-color: #333;
+        z-index: 11;
+        top: 20px;
+        border-radius: 10px;
+        transform: translate(0,27px);
         
+    }  
+}
+
+@media screen and (max-width: 1080px) {
+    .HeaderNavHumbuger_Line:last-child {
+        top: 39px;
     }
 }
 
-@media screen and (max-width: 1439px) {
-    .About {
-        flex-direction: column;
-    }
-}
-
-@media screen and (max-width: 1439px) {
-    .ResponsiveMargin {
-        padding: 100px;
-        background-color: darkorange;
-        flex-direction: column;
+@media screen and (max-width: 1080px) {
+    .ContentHeader {
+        background-color: #fff;
+        z-index: 3;
+        width: 100%;
+        position: fixed;
+        height: 59px;
     }
     
+}
+
+@media screen and (max-width: 1080px) {
+    .ContentSize{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .ContentSize0{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .Button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    .
 }
