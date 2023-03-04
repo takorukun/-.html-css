@@ -173,9 +173,9 @@ a {
     display: flex;
     top: 337px;
     background-color: darkorange;
-    width: 1442px;
+    width: 1448px;
     right: 8px;
-    padding-bottom: 200px;
+    padding-bottom: 130px;
     z-index: 100;
     position: relative;
 
@@ -199,7 +199,7 @@ a {
 .FontCustum {
     color: #fff;
     position: relative;
-    bottom: 100px;
+    bottom: 40px;
     font-size: 16px;
     z-index: 106;
 }
@@ -325,8 +325,4 @@ a {
     .Button {
         display: none;
     }
-}
-
-@media screen and (max-width: 1080px) {
-    .
 }
