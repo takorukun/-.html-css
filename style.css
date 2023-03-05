@@ -1,70 +1,204 @@
+.html {
+    -webkit-text-size-adjust: 100%;
+}
+
+html {
+    display: block;
+}
+
 .body {
-    max-width: 100%;
-    max-height: 100%;
-    position: relative;
+    font-size: 14px;
 }
 
-body {
+body, h2, div, ul, li, img, p, section{
     margin: 0;
+    padding: 0;
 }
 
-.Achivement {
-    display: flex;
-    position: absolute;
-    left: 210px;
-    top: 260px;
-    z-index: 5;
-    
+p {
+    line-height: 1.5;
 }
 
-.First-ViewMain_image {
-    position: absolute;
-    width: 1500px;
-    z-index: 1;
-    
+div, header, main, section{
+    display: block;
 }
 
-.First-ViewContent_text {
+h2 {
+    display: block;
+    margin-block-start: 0.83rem;
+    margin-block-end: 0.83rem;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+.Header {
+    width: 100%;
     position: absolute;
-    text-align: center;
-    font-weight: 700;
-    line-height: 54px;
-    left: 170px;
-    font-size: 38px;
-    top: 100px;
-    z-index: 3;
-    
+}
+
+.Header {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .ContentHeader{
-        position: relative;
-        display: flex;
-        justify-content: space-between;
-}
-
-.TitleLogo {
-    display: block;
-    position: absolute;
-    width: 200px;
-    height: 20px;
-    z-index: 4;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 60px;
+    max-width: 100%;
+    position: relative;
     
 }
 
-.top-0 {
-    top: 0;
+.TitleLogo_image--pc {
+    display: block;
+    height: 20px;
+    width: auto;
+    
 }
 
-.top-20{
-    top: 20px;
+.TitleLogo_image--sp {
+    display: none;
+    height: 16px;
+    width: auto;
 }
 
-.right-0 {
-    right: 0;
+/*ハンバーガーメニューとnavを横並び */
+.HeaderNav {
+    display: inline-block;
 }
 
-.left-30 {
-    left: 30px;
+.HeaderNavList {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.HeaderNavItem {
+    margin-right: 45px;
+}
+
+/*brを使わず改行 */
+.HeaderNavItem_List {
+    display: block;
+}
+
+.HeaderNavItem:last-of-type {
+    margin-right: 0;
+}
+
+.NavButton {
+    background-color: darkorange;
+    border-radius: 38px;
+    padding: 0 20px;
+    display: flex;
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+
+}
+
+.HeaderNavItem_List>
+span {
+    display: block;
+    font-weight: 700;
+
+}
+
+.HeaderNavItem_List>
+span:first-child {
+    font-family: 'Lato',sans-serif,;
+
+}
+
+.HeaderNavItem_List>
+span:last-child {
+    font-size: 10px;
+
+}
+
+.HeaderNavHumburger {
+    display: none;
+}
+
+.main {
+    display: block;
+}
+
+.section {
+    display: block;
+}
+
+.FirstView {
+    background-image: url(
+        //camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+    background-size: cover;
+    background-position: center;
+    padding-top: 100px;
+    padding-bottom: 28px;
+}
+
+.FirstView_image {
+    display: none;
+    width: 100%;
+}
+
+.FirstView_container {
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.FirstViewContent {
+    margin-bottom: 70px;
+    width: fit-content;
+}
+
+.First-ViewContent_text {
+    color: #333;
+    font-size: 38px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 54px;
+    margin-bottom: 15px;
+    
+}
+
+.Achivement {
+    margin-bottom: 25px;
+}
+
+.Archivement
+img {
+    margin-right: 8px;
+}
+
+.Achivement:nth-of-type(2) {
+    width: 40%;
+}
+
+.Achivement:last-of-type {
+    margin-right: 0;
+}
+
+.First-ViewMain_image {
+    position: absolute;
+
+    width: 1500px;
+    
 }
 
 .First-ViewMain_image {
@@ -72,257 +206,336 @@ body {
     
 }
 
-
-
 ul {
-    display: flex;
-    bottom: 70px;
-    text-align: center;
-    position: relative;
-    z-index: 10;
-    
-}
-
-li{
-    z-index: 7;
     list-style: none;
     
 }
 
+li{
+    display: list-item;
+    text-align: -webkit-match-parent;
+    
+}
+
 a {
+    color: #333;
     text-decoration: none;
 }
 
-.ContentSize {
-    font-size: 15px;
-    font-family: sans-serif;
-    color: #333;
-    margin: 0 60px 0 0;
-    z-index: 2;
+.FirstViewContent__buttons {
+    display: flex;
 }
 
-.ContentSize0 {
-    font-size: 9px;
-    font-family: sans-serif;
-    color: #333;
-    margin: 0 50px 0 0;
-    right: 4px;
-    bottom: 19px;
-    position: relative;
-    z-index: 2;
-    
+.FirstViewContent__buttons a:first-of-type {
+    margin-right: 15px;
+    width: 306px;
 }
 
-.Button {
-    top: 33px;
-    right: 15px;
-    background-color: darkorange;
-    padding: 10px;
-    font-size: 12px;
-    color: #fff;
-    border-radius: 38px;
-    position: relative;
-
-}
-
-.Button0{
-    background-color: darkorange;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-    border-radius: 38px;
-    top: 460px;
-    right: 960px;
-    width: 250px;
-    z-index: 6;
-    position: absolute;
-
-}
-
-.Button1{
+.FirstViewContent__buttons a:last-of-type {
     background-color: #fff;
+    border:1px solid #e0e0e0;
     color: #333;
-    padding: 20px;
+    width: 176px;
+}
+
+.FirstViewContent__buttons a {
     text-align: center;
+    background-color: darkorange;
+    border: none;
     border-radius: 38px;
-    border: 1px solid #e0e0e0;
-    top: 460px;
-    right: 780px;
-    z-index: 9;
-    position: absolute;
-    
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 700;
+    height: 64px;
+    justify-content: center;
+    text-decoration: none;
+    text-align: center;
 }
 
 .Note {
-    z-index: 11;
     font-size: 12px;
-    display: flex;
-    justify-content: center;
-    top: 340px;
-    position: relative;
-    color: rgb(162, 162, 162);
+    color: #a2a2a4;
    
 }
 
-.Note1 {
-    color: rgb(162, 162, 162);
-
+.Note a {
+    color: #a2a2a4;
 }
 
 .AboutWrapper {
-    display: flex;
-    top: 337px;
     background-color: darkorange;
-    width: 1448px;
-    right: 8px;
-    padding-bottom: 130px;
-    z-index: 100;
-    position: relative;
-
+    padding: 44px 0;
 }
 
 .About {
+    max-width: 1140px;
+    padding-left: 50px;
+    padding-right: 50px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
     display: flex;
     justify-content: space-between;
-    position: relative;
-    z-index: 20;
-
 }
 
 .AboutVideo{
-    width: 36%;
-    top: 50px;
-    left: 160px;
-    position: relative;
+    width: 50%;
 }
 
 .FontCustum {
-    color: #fff;
-    position: relative;
-    bottom: 40px;
-    font-size: 16px;
-    z-index: 106;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-left: 32px;
+    align-items: flex-start;
+    margin-bottom: 0;
+
 }
 
-.FontSize {
+.FontCustum h2 {
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 40px;
-    margin: 0 40px;
-    left: 688px;
-    position: relative;
-    
+    font-size: 38px;
+    font-weight: 900;
+    letter-spacing: .1em;
+    line-height: 54px;
+    width: 100%;
 }
 
-.LetterAdjustment {
-    position: relative;
-    font-size: 18px;
-    left: 730px;
-    top: 20px;
+.FontCustum h2 {
+    color: #fff;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.FontCustum h2>span {
+    font-size: 38px;
+    color: #fff;
+}
+
+.FontCustum h2 span {
+    font-weight: 900;
+}
+
+.FontCustum br {
+    display: none;
+}
+
+.FontCustum p {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: left;
+    margin-bottom: 16px;
 }
 
 .FontButton {
     color: #fff;
-    top: 30px;
-    left: 3px;
-    position: relative;
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
 }
 
-.ContentLearning{
-    bottom: 3px;
-    position: relative;
+.HeaderNavItem_List:hover{
+    color: #686565;
 }
 
-.TitleLogo:hover {
-    opacity: 0.5;
-
+.NavButton:hover{
+    background-color: rgb(255, 170, 66);
 }
 
-.ComtentSizeHover:hover {
-    opacity: 0.5;
-}
-
-.Button:hover {
+.TitleLogo_image--pc:hover{
     opacity: 0.5;
 }
 
-.Button0:hover {
+.FirstViewContent__buttons a:hover{
     opacity: 0.5;
 }
 
-.Button1:hover {
-    opacity: 0.5;
-}
-
-@media screen and (max-width: 1439px) {
-    .EraseMargin {
-        overflow: hidden;
+@media screen and (max-width:767px) {
+    .Header {
+        padding-top: 15px;
+        padding-bottom: 15px;
     }
 }
 
-@media screen and (max-width: 1080px) {
-    .HeaderNavHumburger {
-        display: inline-block;
-        position: relative;
-        width: 100%;
+@media screen and (max-width:1080px) {
+    .Header {
+        background-color: #fff;
         z-index: 10;
-        transform: translate(0,-50%);
-        left: 1000px;
-    }
-} 
-
-@media screen and (max-width: 1080px) {
-    .HeaderNavHumbuger_Line:first-child {
-        top: 30px;
     }
 }
 
-@media screen and (max-width: 1080px) {
-    .HeaderNavHumbuger_Line {
+@media screen and (max-width:1080px) {
+    .Header--common {
+        position: fixed !important;
+    } 
+}
+
+@media screen and (max-width:767px) {
+    .ContentHeader {
+        max-width: 100%;
+        margin: 0 20px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .TitleLogo_image--pc {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .TitleLogo_image--sp {
+        display: block;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .HeaderNavItem {
+        display: none;
+    } 
+}
+
+@media screen and (max-width:1080px){
+    .HeaderNavHumburger {
+        display: block;
         cursor: pointer;
-        display: inline-block;
-        position: absolute;
-        width: 29px;
+        height: 21px;
+        width: 30px;
+        position: relative;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .HeaderNavHumbuger_Line:first-child {
+        top: 10.5px;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .HeaderNavHumbuger_Line:last-child {
+        top: 100%;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .HeaderNavHumbuger_Line {
+        width: 100%;
         height: 3px;
         background-color: #333;
-        z-index: 11;
-        top: 20px;
+        position: absolute;
+        display: block;
         border-radius: 10px;
-        transform: translate(0,27px);
-        
+    }
+}
+
+@media screen and (max-width:767px) {
+    .main {
+        margin-top: 52px;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .main {
+        padding-top: 60px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .FirstView {
+        background-image: none;
+        padding-top: 0;
+        padding-bottom: 35px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .FirstView_container {
+        margin-top: -45vw;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .FirstViewContent {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .First-ViewContent_text {
+        font-size: 26px;
+        line-height: 36px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .FirstViewContent__buttons a:nth-child(2) {
+        display: none;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .FirstViewContent__buttons a:nth-child(1) {
+        width: 100%;
     }  
 }
 
-@media screen and (max-width: 1080px) {
-    .HeaderNavHumbuger_Line:last-child {
-        top: 39px;
+@media screen and (max-width:767px) {
+    .FirstView_image {
+        display: block;
+
     }
 }
 
-@media screen and (max-width: 1080px) {
-    .ContentHeader {
-        background-color: #fff;
-        z-index: 3;
+@media screen and (max-width:767px){
+    .Archivement {
+        display: flex;
+        justify-content: space-between;
         width: 100%;
-        position: fixed;
-        height: 59px;
-    }
-    
-}
-
-@media screen and (max-width: 1080px) {
-    .ContentSize{
-        display: none;
     }
 }
 
-@media screen and (max-width: 1080px) {
-    .ContentSize0{
-        display: none;
+@media screen and (max-width:767px) {
+    .Achivement img:nth-child(1) {
+        width: 27.5%;
+    }  
+}
+
+@media screen and (max-width:767px) {
+    .Achivement img:nth-child(2) {
+        width: 40%;
+    } 
+}
+
+@media screen and (max-width:767px) {
+    .Achivement img:nth-child(3) {
+        width: 27.5%;
+    }  
+}
+
+@media screen and (max-width:767px) {
+    .AboutWrapper{
+        padding: 30px 0;
     }
 }
 
-@media screen and (max-width: 1080px) {
-    .Button {
-        display: none;
+@media screen and (max-width:1024px) {
+    .About {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .AboutVideo{
+        margin-bottom: 16px;
+        width: 75%;
     }
 }
