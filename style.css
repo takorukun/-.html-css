@@ -141,7 +141,7 @@ span:last-child {
 
 .FirstView {
     background-image: url(
-        //camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
+        https://camp.potepan.com/wp-content/themes/potepancamp/assets/styles/../images/home/first-view/top-hero.jpg);
     background-size: cover;
     background-position: center;
     padding-top: 100px;
